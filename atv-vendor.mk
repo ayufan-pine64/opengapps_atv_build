@@ -1,3 +1,8 @@
+include vendor/google/build/config.mk
+include $(GAPPS_FILES)
+
+DEVICE_PACKAGE_OVERLAYS += $(GAPPS_DEVICE_FILES_PATH)/overlay/pico
+
 PRODUCT_PACKAGES += \
 		BugReportSender \
 		ConfigUpdater \
@@ -5,7 +10,6 @@ PRODUCT_PACKAGES += \
 		GoogleContactsSyncAdapter \
 		GoogleServicesFramework \
 		NoTouchAuthDelegate \
-		SetupWraith \
 		PrebuiltGmsCorePano \
 		Tubesky \
 		Backdrop \
@@ -32,3 +36,5 @@ PRODUCT_PACKAGES += \
 		YouTubeLeanback \
 		LandscapeWallpaper \
 		WebViewGoogle
+
+DEVICE_PACKAGE_OVERLAYS += $(GAPPS_DEVICE_FILES_PATH)/overlay/webview/24
