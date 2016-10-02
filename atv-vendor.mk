@@ -34,7 +34,13 @@ PRODUCT_PACKAGES += \
 		Katniss \
 		AtvWidget \
 		YouTubeLeanback \
-		LandscapeWallpaper \
-		WebViewGoogle
+		LandscapeWallpaper
 
+ifeq ($(GAPPS_FORCE_WEBVIEW_OVERRIDES),true)
+ifneq ($(filter-out $(call get-allowed-api-levels),24),)
+DEVICE_PACKAGE_OVERLAYS += $(GAPPS_DEVICE_FILES_PATH)/overlay/webview/21
+else
 DEVICE_PACKAGE_OVERLAYS += $(GAPPS_DEVICE_FILES_PATH)/overlay/webview/24
+endif
+PRODUCT_PACKAGES += WebViewGoogle
+endif
