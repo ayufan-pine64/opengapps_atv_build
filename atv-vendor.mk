@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
 		Tubesky \
 		Backdrop \
 		AndroidMediaShell \
-		GamepadPairingService \
 		GlobalKeyInterceptor \
 		TV \
 		Overscan \
