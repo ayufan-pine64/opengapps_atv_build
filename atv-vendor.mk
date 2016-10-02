@@ -8,7 +8,11 @@ PRODUCT_PACKAGES += \
 		ConfigUpdater \
 		GoogleBackupTransport \
 		GoogleContactsSyncAdapter \
+		GoogleExtServices \
+		GoogleExtShared \
+		GooglePackageInstaller \
 		GoogleServicesFramework \
+		GoogleTTS \
 		NoTouchAuthDelegate \
 		PrebuiltGmsCorePano \
 		Tubesky \
