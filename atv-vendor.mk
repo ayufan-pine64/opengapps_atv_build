@@ -37,7 +37,8 @@ PRODUCT_PACKAGES += \
 		Katniss \
 		AtvWidget \
 		YouTubeLeanback \
-		LandscapeWallpaper
+		LandscapeWallpaper \
+		SetupWraith
 
 ifeq ($(GAPPS_FORCE_WEBVIEW_OVERRIDES),true)
 ifneq ($(filter-out $(call get-allowed-api-levels),24),)
