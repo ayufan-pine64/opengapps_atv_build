@@ -32,7 +32,6 @@ GAPPS_PRODUCT_PACKAGES += \
 		Katniss \
 		AtvWidget \
 		YouTubeLeanback \
-		LandscapeWallpaper \
 		SetupWraith
 
 ifneq ($(filter $(call get-allowed-api-levels),23),)
@@ -46,7 +45,8 @@ GAPPS_PRODUCT_PACKAGES += \
     GooglePrintRecommendationService \
     GoogleExtServices \
     GoogleExtShared \
-    AtvRemoteService
+    AtvRemoteService \
+    LandscapeWallpaper
 endif
 
 # This needs to be at the end of standard files, but before the GAPPS_FORCE_* options,
