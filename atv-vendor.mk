@@ -32,7 +32,8 @@ GAPPS_PRODUCT_PACKAGES += \
 		Katniss \
 		AtvWidget \
 		YouTubeLeanback \
-		SetupWraith
+		SetupWraith \
+		AtvRemoteService
 
 ifneq ($(filter $(call get-allowed-api-levels),23),)
 GAPPS_PRODUCT_PACKAGES += \
@@ -40,19 +41,11 @@ GAPPS_PRODUCT_PACKAGES += \
     GooglePackageInstaller
 endif
 
-ifneq ($(filter $(call get-allowed-api-levels),23),)
-ifeq ($(filter $(call get-allowed-api-levels),24),)
-GAPPS_PRODUCT_PACKAGES += \
-    AtvRemote
-endif
-endif
-
 ifneq ($(filter $(call get-allowed-api-levels),24),)
 GAPPS_PRODUCT_PACKAGES += \
     GooglePrintRecommendationService \
     GoogleExtServices \
     GoogleExtShared \
-    AtvRemoteService \
     LandscapeWallpaper
 endif
 
