@@ -27,7 +27,6 @@ GAPPS_PRODUCT_PACKAGES += \
 		VideosPano \
 		Music2Pano \
 		CanvasPackageInstaller \
-		FuguPairingTutorial \
 		PlayGames \
 		Katniss \
 		AtvWidget \
