@@ -252,7 +252,7 @@ opengapps_generate_atv_mk() {
     return 1
   fi
 
-  local MODULES=$(gettop)/vendor/google/atv-build/modules
+  local MODULES=$(gettop)/vendor/opengapps/atv-build/modules
 
   rm -rf "$MODULES/"
   mkdir -p "$MODULES"
@@ -274,7 +274,7 @@ opengapps_generate_atv_mk() {
 
     echo "$name"
 
-    if [[ -f "$(gettop)/vendor/google/build/modules/$name/Android.mk" ]]; then
+    if [[ -f "$(gettop)/vendor/opengapps/build/modules/$name/Android.mk" ]]; then
       continue
     fi
 
