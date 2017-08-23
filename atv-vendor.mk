@@ -1,3 +1,4 @@
+include vendor/opengapps/build/core/definitions.mk
 include vendor/opengapps/build/config.mk
 include $(GAPPS_FILES)
 
