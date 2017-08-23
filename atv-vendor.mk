@@ -1,6 +1,6 @@
 include vendor/opengapps/build/core/definitions.mk
 include vendor/opengapps/build/config.mk
-include $(GAPPS_FILES)
+include vendor/opengapps/build/opengapps-files.mk
 
 DEVICE_PACKAGE_OVERLAYS += $(GAPPS_DEVICE_FILES_PATH)/overlay/pico
 
